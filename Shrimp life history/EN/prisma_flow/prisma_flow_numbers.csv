@@ -1,0 +1,31 @@
+field,value,note
+# PRISMA 2020 FLOW DIAGRAM NUMBERS (14 Oct 2026). Column 3 records the origin of each number (internal; not drawn in the diagram).
+draft,0,
+show_marks,0,
+# --- IDENTIFICATION: databases (same search strings in all; Appendix D)
+database:Web of Science,24,reported by searchers
+database:Scopus,36,reported by searchers
+database:ASFA,6,reported by searchers
+database:CAPES Periodicals Portal,6,reported by searchers
+# --- IDENTIFICATION: other methods
+other:Citation searching (forward and backward),30,reported by searchers
+"other:Grey literature (theses, dissertations, undergraduate theses and reports)",32,exact - count by source type in the search spreadsheet
+"other:Complementary searching (Crossref/DOAJ, portals, repositories and reference lists)",86,balance - closes the total with the 188 records of the search list
+duplicates,10,reported by searchers
+# --- SCREENING
+screening_excluded:Irrelevant by title/abstract,12,balance - raw database returns minus relevant records
+screening_excluded:Outside Brazilian waters,10,reported by searchers
+screening_excluded:No parameter of interest or not a primary report,2,exact - 2 records marked 'remove from list'
+not_retrieved,13,exact - 11 not located + 2 'already in database' without a record in the master spreadsheet
+# --- ELIGIBILITY
+fulltext_excluded:No parameters of interest,55,balance - 58 read without parameters minus the 3 out-of-scope species
+fulltext_excluded:Species out of scope,3,reported by searchers
+fulltext_excluded:Secondary compilation without primary data,3,exact - search spreadsheet
+fulltext_excluded:Captivity,1,exact - Peixoto et al. 2001 (sheet removed_rows)
+# --- INITIAL DATABASE
+previous_base,52,balance - master-spreadsheet sources not coming from the search list (162 - 111 + 1)
+previous_excluded:outside Brazilian waters,1,exact - Morenza et al. 1992 (sheet removed_rows)
+# --- INCLUDED (= master spreadsheet)
+included_reports,162,exact - sheet sources of the master spreadsheet
+primary_studies,150,exact - sheet primary_studies of the master spreadsheet
+included_via_secondary,19,exact - sources with reliability_level 4
